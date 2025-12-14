@@ -19,6 +19,9 @@
                 <a href="#services">Services</a>
                 <a href="#resume">Resume</a>
                 <a href="#contact">Contact</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
             </nav>
         </div>
     </header>
@@ -28,24 +31,24 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div>
-                    <div class="hero-divider"></div>
                     <h1 class="hero-title">Ammiel Jamir</h1>
                     <p class="hero-tagline">"Your vision, transformed into reality."</p>
+                    <div class="hero-divider" style="width: 600px; margin-top: 20px;"></div>
+                    <div class="profession-badge"><span id="professionText">UI/UX Designer</span></div>
                 </div>
-                <div class="profession-badge">UI/UX Designer</div>
+
                 <p class="hero-bio">I am Ammiel Jamir, an aspiring UI/UX Designer turning ideas into clean, compelling visuals, blending creativity and clarity to bring digital experiences to life.</p>
                 <div class="cta-buttons">
                     <button class="btn btn-primary">View Portfolio</button>
-                    <button class="btn btn-secondary">Contact Me</button>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/ammiel.jamir" class="facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://github.com/ammielmiel07" class="github" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/ammiel-jamir-409232390/" class="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ammiel.jamir" class="facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/ammielmiel07" class="github" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ammiel-jamir-409232390/" class="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect fill='%238b6f47' width='400' height='500'/%3E%3Ctext x='50%' y='50%' font-size='24' fill='%23fff' text-anchor='middle' dominant-baseline='middle'%3EYour Photo Here%3C/text%3E%3C/svg%3E" alt="Ammiel Jamir - Professional Photo">
+                <img src="images/AmmielPic.jpg" alt="Ammiel Jamir - Professional Photo">
             </div>
         </div>
     </section>
@@ -53,36 +56,36 @@
     <!-- Featured Projects Section -->
     <section class="projects" id="portfolio">
         <div class="projects-container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title scroll-animate" data-animation="fade-up">Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">PDFMNHS Website Redesign</div>
+                <div class="project-card scroll-animate" data-animation="slide-left">
+                    <div class="project-image"><img src="images/POMS.png" alt="PDFMNHS Website Redesign"></div>
                     <div class="project-info">
-                        <h3 class="project-title">School Portal Design</h3>
-                        <p class="project-description">A comprehensive redesign of the school's digital portal with improved user interface and navigation.</p>
-                        <a href="#" class="project-link">View Project →</a>
+                        <h3 class="project-title">POMS | PDFMNHS Online Management System</h3>
+                        <p class="project-description">A web-based system built with ASP.NET MVC that streamlines manual school processes, including administrative recordkeeping, faculty grade encoding, and student performance tracking.</p>
+                        <a href="https://pdfmnhs-oms.azurewebsites.net" class="project-link">View Project →</a>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">Share A Book Platform</div>
+                <div class="project-card scroll-animate" data-animation="slide-right">
+                    <div class="project-image"><img src="images/Bookstore.png" alt="PDFMNHS Website Redesign" style="object-position: top; height: 120%;"></div>
                     <div class="project-info">
-                        <h3 class="project-title">Book Sharing Community</h3>
+                        <h3 class="project-title">Share a Book website</h3>
                         <p class="project-description">An interactive platform for book lovers to share, review, and discover new books.</p>
-                        <a href="#" class="project-link">View Project →</a>
+                        <a href="https://ammielmiel07.github.io/mid-labact/" class="project-link">View Project →</a>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">E-Commerce Application</div>
+                <div class="project-card scroll-animate" data-animation="slide-left">
+                    <div class="project-image"><img src="images/FBFull.png" alt="Finance Buddy" style="object-fit: contain;"></div>
                     <div class="project-info">
-                        <h3 class="project-title">E-Commerce Platform</h3>
-                        <p class="project-description">A modern and responsive e-commerce application with seamless checkout experience.</p>
+                        <h3 class="project-title">Finance Buddy</h3>
+                        <p class="project-description">A mobile application designed to help users manage their personal finances effectively.</p>
                         <a href="#" class="project-link">View Project →</a>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card scroll-animate" data-animation="slide-right">
                     <div class="project-image">Business Dashboard</div>
                     <div class="project-info">
                         <h3 class="project-title">Analytics Dashboard</h3>
@@ -100,15 +103,7 @@
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="footer-copyright">
                 © Jamir | 2025
-            </div>
         </div>
     </footer>
 
@@ -129,8 +124,106 @@
             document.querySelector('#portfolio').scrollIntoView({ behavior: 'smooth' });
         });
 
-        document.querySelector('.btn-secondary').addEventListener('click', () => {
-            alert('Contact form - Coming soon!');
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-mode');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            // Update icon
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Animated Profession Text with Cool Effects
+        const professions = ['UI/UX Designer', 'Digital Artist', 'Web Developer', 'Graphic Designer'];
+        const professionText = document.getElementById('professionText');
+        const professionBadge = document.querySelector('.profession-badge');
+        let currentIndex = 0;
+
+        function rotateProfession() {
+            // Slide out to left with fade
+            professionText.style.opacity = '0';
+            professionText.style.transform = 'translateX(-30px)';
+            
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % professions.length;
+                professionText.textContent = professions[currentIndex];
+                
+                // Position text to slide in from right
+                professionText.style.transition = 'none';
+                professionText.style.transform = 'translateX(30px)';
+                professionText.style.opacity = '0';
+                
+                // Force reflow
+                professionText.offsetHeight;
+                
+                // Re-enable transition
+                professionText.style.transition = 'opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                
+                setTimeout(() => {
+                    // Slide in from right with fade
+                    professionText.style.opacity = '1';
+                    professionText.style.transform = 'translateX(0)';
+                }, 50);
+            }, 700);
+        }
+
+        // Start animation after 2 seconds
+        setTimeout(() => {
+            setInterval(rotateProfession, 4000);
+        }, 2000);
+
+        // Scroll Animation Observer with bidirectional animation
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const animatedElements = new Map();
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    // Element is entering viewport
+                    if (!animatedElements.has(entry.target)) {
+                        animatedElements.set(entry.target, true);
+                        const allAnimated = Array.from(document.querySelectorAll('.scroll-animate'));
+                        const index = allAnimated.indexOf(entry.target);
+                        
+                        setTimeout(() => {
+                            entry.target.classList.add('animate-in');
+                        }, index * 80);
+                    } else {
+                        entry.target.classList.add('animate-in');
+                    }
+                } else {
+                    // Element is leaving viewport - animate out
+                    entry.target.classList.remove('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with scroll-animate class
+        document.querySelectorAll('.scroll-animate').forEach((element) => {
+            observer.observe(element);
         });
     </script>
 </body>
