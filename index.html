@@ -673,6 +673,166 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title scroll-animate" data-animation="fade-up">Get In Touch</h2>
+            <p class="section-subtitle scroll-animate" data-animation="fade-up">Have a project in mind? Let's work together!</p>
+
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper scroll-animate" data-animation="slide-left">
+    <div class="form-header">
+        <h3>Send Me a Message</h3>
+        <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+    </div>
+
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xldqvplj" method="POST">
+        
+        <div class="form-group">
+            <label for="name">
+                <i class="fas fa-user"></i> Your Name
+            </label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">
+                <i class="fas fa-envelope"></i> Email Address
+            </label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">
+                <i class="fas fa-tag"></i> Subject
+            </label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">
+                <i class="fas fa-comment-dots"></i> Message
+            </label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+    </form>
+
+    <div class="form-success" id="formSuccess" style="display: none;">
+        <i class="fas fa-check-circle"></i>
+        <p>Thank you! Your message has been sent successfully.</p>
+    </div>
+</div>
+
+<script>
+    var form = document.getElementById("contactForm");
+    
+    async function handleSubmit(event) {
+        event.preventDefault(); 
+        var status = document.getElementById("formSuccess");
+        var data = new FormData(event.target);
+
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                status.style.display = "block"; 
+                form.reset(); 
+            } else {
+                alert("Oops! There was a problem submitting your form");
+            }
+        }).catch(error => {
+            alert("Oops! There was a problem submitting your form");
+        });
+    }
+
+    form.addEventListener("submit", handleSubmit);
+</script>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper scroll-animate" data-animation="slide-right">
+                    <div class="contact-info-card">
+                        <h3>Direct Contact</h3>
+                        <p>Feel free to reach out through any of these channels</p>
+
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:ammieljamir@gmail.com">ammieljmr@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+639655473954">+63 965 547 3954</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>Imus, Cavite, Philippines</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="contact-social">
+                            <h4>Connect With Me</h4>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/ammiel.jamir" class="social-icon facebook" title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://github.com/ammielmiel07" class="social-icon github" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ammiel-jamir-409232390/" class="social-icon linkedin" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://www.instagram.com/zeng_pixels/" class="social-icon instagram" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Map -->
+                    <div class="map-container scroll-animate" data-animation="fade-up">
+                        <iframe 
+                        
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61831.44269665901!2d120.89590710491743!3d14.40032755293357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d252b84f3c11%3A0x38b0f2e1f833e8df!2sImus%2C%20Cavite!5e0!3m2!1sen!2sph!4v1765731438058!5m2!1sen!2sph" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 15px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="footer-container">
@@ -893,6 +1053,37 @@
             link.click();
             document.body.removeChild(link);
         }
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            // Here you would typically send the data to a server
+            // For now, we'll just show a success message
+            console.log('Form Data:', formData);
+
+            // Hide form and show success message
+            contactForm.style.display = 'none';
+            formSuccess.style.display = 'flex';
+
+            // Reset form after 3 seconds and show it again
+            setTimeout(() => {
+                contactForm.reset();
+                contactForm.style.display = 'block';
+                formSuccess.style.display = 'none';
+            }, 3000);
+        });
     </script>
 </body>
 </html>
