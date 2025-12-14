@@ -647,6 +647,381 @@ body.dark-mode .life-photo {
     border-color: #d4a574;
 }
 
+/* Dark Mode - Services Section */
+body.dark-mode .section-subtitle {
+    color: #b0b0b0;
+}
+
+body.dark-mode .service-card {
+    background: #2a2a2a;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .service-card:hover {
+    box-shadow: 0 12px 40px rgba(139, 111, 71, 0.3);
+}
+
+body.dark-mode .service-title {
+    color: #f5f5f5;
+}
+
+body.dark-mode .service-description {
+    color: #b0b0b0;
+}
+
+body.dark-mode .pricing-title,
+body.dark-mode .workflow-title {
+    color: #f5f5f5;
+}
+
+body.dark-mode .workflow-subtitle {
+    color: #b0b0b0;
+}
+
+body.dark-mode .pricing-card {
+    background: #2a2a2a;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .pricing-card:hover {
+    box-shadow: 0 12px 40px rgba(139, 111, 71, 0.3);
+}
+
+body.dark-mode .pricing-card.featured {
+    border-color: #d4a574;
+}
+
+body.dark-mode .pricing-header {
+    border-bottom-color: rgba(212, 165, 116, 0.2);
+}
+
+body.dark-mode .pricing-header h4 {
+    color: #f5f5f5;
+}
+
+body.dark-mode .price-desc {
+    color: #b0b0b0;
+}
+
+body.dark-mode .pricing-features li {
+    color: #b0b0b0;
+}
+
+body.dark-mode .pricing-btn {
+    background: linear-gradient(135deg, #8b6f47 0%, #6b5636 100%);
+}
+
+body.dark-mode .pricing-btn:hover {
+    background: linear-gradient(135deg, #d4a574 0%, #8b6f47 100%);
+}
+
+body.dark-mode .workflow-step {
+    background: #2a2a2a;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .workflow-step:hover {
+    box-shadow: 0 8px 30px rgba(139, 111, 71, 0.3);
+}
+
+body.dark-mode .step-icon {
+    color: #d4a574;
+}
+
+body.dark-mode .step-title {
+    color: #f5f5f5;
+}
+
+body.dark-mode .step-description {
+    color: #b0b0b0;
+}
+
+/* Services Section */
+.services {
+    background: transparent;
+    padding: 100px 20px;
+    position: relative;
+    transition: background 2s ease;
+}
+
+.services-container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #64748b;
+    margin-top: -40px;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+/* Service Cards */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(62, 39, 35, 0.15);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: linear-gradient(135deg, #8b6f47 0%, #6b5636 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.service-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #3e2723;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    font-size: 15px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* Pricing Section */
+.pricing-section {
+    margin-bottom: 80px;
+}
+
+.pricing-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #3e2723;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(62, 39, 35, 0.15);
+}
+
+.pricing-card.featured {
+    border-color: #8b6f47;
+    transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #8b6f47 0%, #6b5636 100%);
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.pricing-header h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3e2723;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: #8b6f47;
+    margin: 10px 0;
+}
+
+.price-desc {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.pricing-features li {
+    padding: 12px 0;
+    font-size: 15px;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pricing-features i {
+    color: #8b6f47;
+    font-size: 16px;
+}
+
+.pricing-btn {
+    width: 100%;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #3e2723 0%, #2c1810 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pricing-btn:hover {
+    background: linear-gradient(135deg, #8b6f47 0%, #6b5636 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(139, 111, 71, 0.3);
+}
+
+/* Workflow Section */
+.workflow-section {
+    margin-top: 60px;
+}
+
+.workflow-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #3e2723;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.workflow-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 50px;
+}
+
+.workflow-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.workflow-step {
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.workflow-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(62, 39, 35, 0.12);
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #8b6f47 0%, #6b5636 100%);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(139, 111, 71, 0.4);
+}
+
+.step-icon {
+    font-size: 40px;
+    color: #8b6f47;
+    margin: 25px 0 20px;
+}
+
+.step-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3e2723;
+    margin-bottom: 12px;
+}
+
+.step-description {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
 /* Featured Projects Section */
 .projects {
     background: linear-gradient(180deg, #f8f9fa 0%, #f5f5f5 100%);
